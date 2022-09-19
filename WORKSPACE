@@ -11,7 +11,6 @@ maybe(
     ],
     sha256 = "1c531376ac7e5a180e0237938a2536de0c54d93f5c278634818e0efc952dd56c",
 )
-register_toolchains("//android/toolchains/emulator:all")
 
 maybe(
     http_archive,
