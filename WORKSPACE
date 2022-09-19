@@ -31,10 +31,10 @@ maybe(
         "https://github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz",
         "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz",
     ],
+    sha256 = "1c531376ac7e5a180e0237938a2536de0c54d93f5c278634818e0efc952dd56c",
 )
 register_toolchains("//toolchains/android:all")
 register_toolchains("//toolchains/android_sdk:all")
-register_toolchains("//toolchains/emulator:all")
 
 maybe(
     http_archive,
@@ -83,8 +83,3 @@ go_repository(
 go_rules_dependencies()
 
 go_register_toolchains(version = "1.18.3")
-
-gazelle_dependencies()
-# gazelle:repository go_repository name=org_golang_x_xerrors importpath=golang.org/x/xerrors
-rules_android_workspace()
-
