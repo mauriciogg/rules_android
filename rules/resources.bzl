@@ -1105,7 +1105,7 @@ def _process_starlark(
         neverlink = False,
         enable_data_binding = False,
         propagate_resources = True,
-        fix_resource_transitivity = False,
+        fix_resource_transitivity = True,
         aapt = None,
         android_jar = None,
         android_kit = None,
@@ -1733,7 +1733,7 @@ def _process(
         enable_res_v3 = False,
         res_v3_dummy_manifest = None,
         res_v3_dummy_r_txt = None,
-        fix_resource_transitivity = False,
+        fix_resource_transitivity = True,
         fix_export_exporting = False,
         propagate_resources = True,
         zip_tool = None):
