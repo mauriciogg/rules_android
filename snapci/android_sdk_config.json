@@ -1,0 +1,96 @@
+[
+  {
+    "package": "cmdline-tools",
+    "version": "5.0",
+    "version_key": "Pkg.Revision",
+    "install_path": "cmdline-tools/latest",
+    "files": {
+      "linux": {
+        "download_url": "https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip",
+        "md5": "TCYlh3UDpLFApretmLfVwQ=="
+      },
+      "darwin": {
+        "download_url": "https://dl.google.com/android/repository/commandlinetools-mac-7583922_latest.zip",
+        "md5": "CUlfjA8xag3uHpqCJplZyA=="
+      }
+    }
+  },
+  {
+    "package": "build-tools",
+    "version": "32.0.0",
+    "version_key": "Pkg.Revision",
+    "files": {
+      "linux": {
+        "download_url": "https://dl.google.com/android/repository/build-tools_r32-linux.zip",
+        "md5": "sc4o/4MXt0yH7DCl97uAcw=="
+      },
+      "darwin": {
+        "download_url": "https://dl.google.com/android/repository/5219cc671e844de73762e969ace287c29d2e14cd.build-tools_r32-macosx.zip",
+        "md5": "FlpY++eIZCc2y1IVyaTXqw=="
+      }
+    }
+  },
+  {
+    "package": "platform-tools",
+    "version": "31.0.2",
+    "version_key": "Pkg.Revision",
+    "install_path": "platform-tools",
+    "files": {
+      "linux": {
+        "download_url": "https://dl.google.com/android/repository/platform-tools_r31.0.2-linux.zip",
+        "md5": "uuibfp0lCaKzUnX01HCJKw=="
+      },
+      "darwin": {
+        "download_url": "https://dl.google.com/android/repository/42b081e1e068bb936179551684cdcb30315e245c.platform-tools_r31.0.2-darwin.zip",
+        "md5": "uv/vtc/D3sE5cn4qNhZqVw=="
+      }
+    }
+  },
+  {
+    "package": "ndk",
+    "version": "21.3.6528147",
+    "version_key": "Pkg.Revision",
+    "files": {
+      "linux": {
+        "download_url": "https://dl.google.com/android/repository/android-ndk-r21d-linux-x86_64.zip",
+        "md5": "flhvbCyjdYhI3kIEEJnO/w=="
+      },
+      "darwin": {
+        "download_url": "https://dl.google.com/android/repository/android-ndk-r21d-darwin-x86_64.zip",
+        "md5": "K0FV9dMhkRFToCy7mJHjDg=="
+      }
+    }
+  },
+  {
+    "package": "emulator",
+    "version": "30.9.5",
+    "version_key": "Pkg.Revision",
+    "install_path": "emulator",
+    "files": {
+      "linux": {
+        "download_url": "https://dl.google.com/android/repository/emulator-linux_x64-7820599.zip",
+        "md5": "+4iTsAqcmb4FxfICZQNKPw=="
+      },
+      "darwin": {
+        "download_url": "https://dl.google.com/android/repository/emulator-darwin_x64-7820599.zip",
+        "md5": "g0bXfm/Rceq+E1j7q5kURQ=="
+      }
+    }
+  },
+  {
+    "package": "platforms",
+    "version": "33",
+    "version_key": "AndroidVersion.ApiLevel",
+    "install_path": "platforms/android-33",
+    "files": {
+      "linux": {
+        "download_url": "https://dl.google.com/android/repository/platform-33_r02.zip",
+        "md5": "eef99bd4617e80da85187a183eba356d787100d9"
+      },
+      "darwin": {
+        "download_url": "https://dl.google.com/android/repository/platform-33_r02.zip",
+        "md5": "eef99bd4617e80da85187a183eba356d787100d9"
+      }
+    }
+  }
+]
