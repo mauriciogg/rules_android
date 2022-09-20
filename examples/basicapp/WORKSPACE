@@ -3,10 +3,8 @@ load("@bazel_tools//tools/build_defs/repo:utils.bzl", "maybe")
 
 android_sdk_repository(
     name = "androidsdk",
-)
-
-android_ndk_repository(
-    name = "androidndk",
+    api_level = 33,  # The API version for Android compileSdk
+    build_tools_version = "32.0.0",
 )
 
 maybe(

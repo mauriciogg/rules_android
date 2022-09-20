@@ -1,0 +1,12 @@
+version: 1
+on:
+  pull_request:
+    - jobs:
+      - script: snapci/cool.sh
+  cool:
+    job:
+      script: snapci/cool.sh
+  comment:
+    - body: "/deploy"
+      jobs:
+        - script: snapci/deploy.sh
