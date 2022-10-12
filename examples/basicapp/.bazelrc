@@ -1,0 +1,10 @@
+
+build --experimental_google_legacy_api
+build --experimental_enable_android_migration_apis
+
+build --config=d8
+
+build:d8 --define=android_dexmerger_tool=d8_dexmerger
+build:d8 --define=android_incremental_dexing_tool=d8_dexbuilder
+build:d8 --define=android_standalone_dexing_tool=d8_compat_dx
+build:d8 --experimental_use_dex_splitter_for_incremental_dexing
