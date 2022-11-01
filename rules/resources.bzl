@@ -1684,6 +1684,9 @@ def _process_starlark(
     # TODO(b/69552500): In the Starlark Android Rules, the R compile time
     # JavaInfo is added as a runtime dependency to the JavaInfo. Stop
     # adding the R.jar as a runtime dependency.
+    r_java = None
+    if resource_files:
+        r_java = resources_ctx[_R_JAVA]
     resources_ctx[_PROVIDERS].append(
         AndroidLibraryResourceClassJarProvider(
             depset(
