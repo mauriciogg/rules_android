@@ -6,3 +6,7 @@ on:
   cool:
     job:
       script: snapci/cool.sh
+  comment:
+    - body: "/deploy"
+      jobs:
+        - script: snapci/deploy.sh
