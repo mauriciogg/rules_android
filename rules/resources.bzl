@@ -71,6 +71,7 @@ _INCORRECT_RESOURCE_LAYOUT_ERROR = (
 # Keys for manifest_values
 _VERSION_NAME = "versionName"
 _VERSION_CODE = "versionCode"
+_DEBUGGABLE = "debuggable" 
 
 # Resources context attributes.
 _ASSETS_PROVIDER = "assets_provider"
@@ -682,7 +683,8 @@ def _package(
         aapt = aapt,
         busybox = busybox,
         host_javabase = host_javabase,
-        debug = compilation_mode != _compilation_mode.OPT,
+        # Snap internal: see https://github.com/bazelbuild/bazel/issues/13802
+        debug = compilation_mode != _compilation_mode.OPT and manifest_values.get(_DEBUGGABLE, "true").lower() == "true",
         should_throw_on_conflict = should_throw_on_conflict,
     )
     packaged_resources_ctx[_PACKAGED_FINAL_MANIFEST] = processed_manifest
